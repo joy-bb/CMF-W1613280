@@ -9,8 +9,7 @@ This report is analyzed price DOT-USD movement in the period of Sep 2020-Aug 202
 ![image](https://github.com/joy-bb/CMF-W1613280/assets/71431452/b3ad41e4-307b-45e2-adde-337abd137f23)
 
 ### Descriptive analysis on Polka Dot price during chosen period:
-Period	Mean	Std	Min	Max	25%	50%	75%
-Sep 2020-Dec 2022	20.13	12.60	3.76	8.13	8.13	18.34	29.61
+![image](https://github.com/joy-bb/CMF-W1613280/assets/71431452/01f6be70-200d-4985-80f6-0b1541cb08c3)
 
 ### Technical analysis
 •	Log Return is one of three methods used to calculate asset’s return, assuming that returns are continuously compounded. It is calculated by taking the natural log of the ending value divided by the beginning value.
@@ -25,20 +24,16 @@ As calculated, the annualized volatility of Polka Dot Jun-Aug/2022 period is 97.
 
 ## Option Pricing Models
 This report is for the sell-side, writing Vanilla European Put Option. The option pricing will be calculated, analyzed and decided with application of Binomial Tree model and Monte-Carlo Simulation, based on following figures:    	
-	Note	Details 
-Spot price	Adjust close price on 30/08/2022	#S: 7.00
-Strike price		#K: 8.00
-Time to maturity 	1 week	#T: 1/52
-Interest rate	Source: US. 10 Year Treasury Rate, 
-updated Apr 2022	#r: 0.03
+![image](https://github.com/joy-bb/CMF-W1613280/assets/71431452/4961f35d-bdb1-4a6e-80f8-bd7eb1b0c849)
 
-Volatility	Calculated using 3months-data of Jun-Aug 2022	#σ: 97.39% or 0.97
 
 ### Binomial Tree
 The binomial option pricing model uses an iterative procedure, producing the specification of nodes in time during the time period between the valuation date and the date to maturity. At every step, the asset price either goes up or goes down, hence the model predicts and creates a binomial distribution of underlying asset prices. Therefore, it represents theoretically possible paths that the asset price will take in the option period.
 Consequently, the option prices at each step of Binomial tree are calculated backward from expiration to the present. Any changes to asset prices or option value are considered to figure out the result at specific node in time.
+
 	Step 1: Creating Binomial tree by working forward from valuation date to expiration. The up and down factors are calculated with following formula:
   ![image](https://github.com/joy-bb/CMF-W1613280/assets/71431452/4062227b-fd0d-479b-be28-85bab7bea651)
+  
   ![image](https://github.com/joy-bb/CMF-W1613280/assets/71431452/f4c3a770-0c2e-4f2d-8e89-c3b35fa36821)
  
 	Step 2: Finding option value at each final node
